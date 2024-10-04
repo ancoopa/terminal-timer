@@ -5,10 +5,10 @@ import { createSpinner } from 'nanospinner'
 import { getRandomInt } from './utils.js'
 import { playSoundInfinite, playSoundRandomStop } from './sound-player.js'
 
-export function runTimer(minutesLeft) {
+export function runTimer(minutesLeft, stopsQuantity) {
   const spinner = createSpinner().start({ color: 'green' })
   let secondsLeft = minutesLeft * 60
-  const randomStopSoundPoints = defineRandomTimepoints(secondsLeft)
+  const randomStopSoundPoints = defineRandomTimepoints(secondsLeft, stopsQuantity)
 
   const redrawTimer = () => {
     const timesString = createTimerStringFromSeconds(secondsLeft)
@@ -32,11 +32,14 @@ export function runTimer(minutesLeft) {
   }, 1000)
 }
 
-function defineRandomTimepoints(sessionTimeInSeconds, quantity = 3) {
+function defineRandomTimepoints(sessionTimeInSeconds, stopsQuantity = 3) {
   assert(typeof sessionTimeInSeconds === 'number')
+  if (stopsQuantity === 0) {
+    return []
+  }
 
   const randomSeconds = []
-  for (let i = 0; i < quantity; i++) {
+  for (let i = 0; i < stopsQuantity; i++) {
     randomSeconds.push(getRandomInt(sessionTimeInSeconds))
   }
   return randomSeconds
