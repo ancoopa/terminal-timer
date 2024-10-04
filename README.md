@@ -22,17 +22,20 @@ or just:
 ```
 $ tt
 ```
+![Default](readme-media/default.gif)
 
 The default session is 1.5 hours, but you can change it using the argument as your session length **in minutes**:
 ```
 $ tt 120
 ```
+![Customize time](readme-media/customize-time.gif)
 
 The timer will put random 3 stops during your session. The beeping sound will play at each stop. You can change the stop quantity by adding another argument.
 For example, to have a 90 minute session with 5 random stops:
 ```
 $ tt 90 5
 ```
+![Customize time and stops](readme-media/customize-time-and-stops.gif)
 Or you can disable these random stops completely by setting them to 0:
 ```
 $ tt 90 0
