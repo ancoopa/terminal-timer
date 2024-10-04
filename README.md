@@ -8,8 +8,10 @@ A simple terminal timer that incorporates some of the ideas that Dr. Andrew Hube
 
 ## Installlation
 ```
-npm i -g terminal-timer
+$ npm i -g terminal-timer
 ```
+### Tested on:
+* MacOS Monterey v12.7.6 with the Node.js v20.
 
 ## How to use
 To start the timer:
@@ -35,4 +37,6 @@ Or you can disable these random stops completely by setting them to 0:
 ```
 $ tt 90 0
 ```
+Because of how the random logic is implemented, it's possible that sometimes you may have fewer stops than you specified.
+
 At the end of the session, the timer will play a longer beeping sound.
