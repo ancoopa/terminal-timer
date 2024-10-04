@@ -4,11 +4,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "timer",
+    "cli",
+    "terminal"
+  ],
+  "author": "Andrii Kuprii <ancoopa@gmail.com> (https://github.com/ancoopa/terminal-timer)",
   "license": "ISC",
   "description": "A simple terminal timer that incorporates some of the ideas that Dr. Andrew Huberman was sharing in his podcasts: 1. The optimal single working session time is ~1.5 hours: https://www.youtube.com/watch?v=5HINgMMTzPE. 2. You will be more productive within the session if you make three short stops (~10 seconds attention switches/rests) at random times during the working session: https://www.youtube.com/shorts/akYXRHysdNc.",
   "dependencies": {
@@ -19,5 +22,9 @@
   "bin": {
     "tt": "./src/index.js",
     "terminal-timer": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ancoopa/terminal-timer.git"
   }
 }
