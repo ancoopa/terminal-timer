@@ -29,7 +29,7 @@ $ tt 120
 ```
 
 The timer will put random 3 stops during your session. The beeping sound will play at each stop. You can change the stop quantity by adding another argument.
-For example, to have a 120 minute session with 5 random stops:
+For example, to have a 90 minute session with 5 random stops:
 ```
 $ tt 90 5
 ```
