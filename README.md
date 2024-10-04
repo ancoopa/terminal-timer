@@ -11,7 +11,8 @@ A simple terminal timer that incorporates some of the ideas that Dr. Andrew Hube
 $ npm i -g terminal-timer
 ```
 ### Tested on:
-* MacOS Monterey v12.7.6 with the Node.js v20.
+* MacOS Monterey v12.7.6 with the Node.js v20
+* Android smartphone with Termux and Node.js v22
 
 ## How to use
 To start the timer:
