@@ -3,8 +3,8 @@
 ## Motivation
 A simple terminal timer that incorporates some of the ideas that Dr. Andrew Huberman was sharing in his podcasts:
 
-1. The optimal single working session time is ~1.5 hours
-2. You will be more productive within the session if you make three short stops (1-2 seconds attention switches) at random times during the working session.
+1. The optimal single working session time is ~1.5 hours: https://www.youtube.com/watch?v=5HINgMMTzPE.
+2. You will be more productive within the session if you make three short stops (~10 seconds attention switches/rests) at random times during the working session: https://www.youtube.com/shorts/akYXRHysdNc.
 
 ## How to use
 To start the timer:
